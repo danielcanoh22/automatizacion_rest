@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Como usuario de una empresa, necesito obtener informacion como el nombre y la industria de la empresa" skipped="0" tests="1" time="0.62" timestamp="2024-11-08 06:46:33"><testcase name="obtener informacion acerca de la empresa"><failure message="1 expectation failed.&#10;JSON path [0].address doesn't match.&#10;Expected: 283 Bryce Knoll&#10;  Actual: 97038 Eladio Centers&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path [0].address doesn't match.
+Expected: 283 Bryce Knoll
+  Actual: 97038 Eladio Centers
+</failure><system-err>1 expectation failed.
+JSON path [0].address doesn't match.
+Expected: 283 Bryce Knoll
+  Actual: 97038 Eladio Centers
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)&#13;
+io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+co.com.udea.certificacion.checkinA.stepdefinitions.PayStepDefinition.lambda$puedoVerLaInformacionAcercaDeLaEmpresa$0(PayStepDefinition.java:46)&#13;
+co.com.udea.certificacion.checkinA.stepdefinitions.PayStepDefinition.puedoVerLaInformacionAcercaDeLaEmpresa(PayStepDefinition.java:44)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
