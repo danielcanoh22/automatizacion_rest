@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Handle errors when retrieving product details" skipped="0" tests="1" time="0.62" timestamp="2024-11-09 09:40:58"><testcase name="Trying to get product details with an incorrect endpoint path"/></testsuite>

@@ -1,8 +1,9 @@
 #language: en
+# Author: Check-in Team
+
 Feature: As a supplier, I want to retrieve a product by its ID
 
-  Scenario: Retrieve a product by ID
-    Given I am connected as a supplier
-    When I send a GET request to retrieve the product by its ID
-    Then I should receive a response with status code 200
-    And the product details should be returned
+  Scenario: Attempt to retrieve product details with an incorrect endpoint path
+    Given the user wants to retrieve a product
+    When the user sends a GET request to an incorrect endpoint path
+    Then the API should respond with status code 404 indicating the resource was not found

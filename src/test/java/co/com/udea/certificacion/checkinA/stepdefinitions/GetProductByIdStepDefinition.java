@@ -14,24 +14,25 @@ import org.hamcrest.Matchers;
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
 
 public class GetProductByIdStepDefinition {
-
+    // Se declara un actor que simula las acciones de un usuario real
     Actor usuario = Actor.named("usuario");
 
     @Before
     public void config() {
         OnStage.setTheStage(new OnlineCast());
-        OnStage.theActorCalled("user");
+        OnStage.theActorCalled("usuario");
     }
 
     @Given("I am connected as a supplier")
     public void iAmConnectedAsASupplier() {
+        // El "usuario" intenta conectarse al servicio
         usuario.attemptsTo(ConnectTo.theService());
     }
 
     @When("I send a GET request to retrieve the product by its ID")
     public void iSendAGETRequestToRetrieveTheProductByItsID() {
-        // Asumiendo que el ID del producto es 123, puede ser pasado como parámetro si se desea hacerlo dinámico
-        String productId = "5"; // ID del producto a recuperar
+        // Se intenta obtener un producto con el ID 5
+        String productId = "5";
         usuario.attemptsTo(GetProductById.withId(productId));
     }
 
