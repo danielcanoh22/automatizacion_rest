@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="As a supplier, I want to retrieve a product by its ID" skipped="1" tests="1" time="0.17" timestamp="2024-11-09 10:06:29"><testcase name="Attempt to retrieve product details with an incorrect endpoint path"><skipped/></testcase></testsuite>

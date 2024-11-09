@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="As a supplier, I want to retrieve a product by its ID" skipped="0" tests="1" time="0.63" timestamp="2024-11-09 12:20:44"><testcase name="Retrieve a product by ID"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="As a supplier, I want to retrieve a product by its ID" skipped="0" tests="1" time="0.65" timestamp="2024-11-09 10:08:19"><testcase name="Retrieve a product by ID"/></testsuite>
