@@ -29,10 +29,10 @@ public class GetProductByInvalidIdStepDefinition {
         usuario.attemptsTo(ConnectTo.theService());
     }
 
-    @When("I send a GET request to retrieve a product with an invalid ID")
-    public void iSendAGetRequestToRetrieveAProductWithAnInvalidID() {
+    @When("I send a GET request to retrieve a product with an invalid ID {string}")
+    public void iSendAGetRequestToRetrieveAProductWithAnInvalidID(String invalidId) {
         // El "usuario" intenta realizar una solicitud GET con un id inválido
-        usuario.attemptsTo(GetProductByInvalidId.withId("invalid-id"));
+        usuario.attemptsTo(GetProductByInvalidId.withId(invalidId));
     }
 
     @Then("the API should respond with status code 200")

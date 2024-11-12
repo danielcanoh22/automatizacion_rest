@@ -2,6 +2,7 @@ package co.com.udea.certificacion.checkinA.stepdefinitions;
 
 import co.com.udea.certificacion.checkinA.tasks.ConnectTo;
 import co.com.udea.certificacion.checkinA.tasks.GetProductById;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,10 +30,9 @@ public class GetProductByIdStepDefinition {
         usuario.attemptsTo(ConnectTo.theService());
     }
 
-    @When("I send a GET request to retrieve the product by its ID")
-    public void iSendAGETRequestToRetrieveTheProductByItsID() {
+    @When("I send a GET request to retrieve the product by its ID {string}")
+    public void iSendAGETRequestToRetrieveTheProductByItsID(String productId) {
         // Se intenta obtener un producto con el ID 5
-        String productId = "5";
         usuario.attemptsTo(GetProductById.withId(productId));
     }
 
