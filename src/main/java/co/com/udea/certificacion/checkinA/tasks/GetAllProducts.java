@@ -6,11 +6,10 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.rest.interactions.Get;
 
 public class GetAllProducts implements Task {
+    private final String endpoint = "/products";
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        String endpoint = "/products";
-
         actor.attemptsTo(Get.resource(endpoint).with(
                 request -> request.relaxedHTTPSValidation()
                         .accept("application/json")

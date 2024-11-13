@@ -41,7 +41,7 @@ public class CreateProductStepDefinition {
         Map<String, String> body = data.get(0);
 
         // Ejecutar la Task para crear el producto
-        usuario.attemptsTo(PostTo.service("/products", body));
+        usuario.attemptsTo(PostTo.service(body));
     }
 
     @Then("the product is successfully created with these details")

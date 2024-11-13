@@ -43,7 +43,7 @@ public class GetAllProductsStepDefinition {
 
     @Then("all the products should be shown")
     public void allTheProductsShouldBeShown() {
-        // Verificar que la respuesta contiene 20 productos
+        // Verificar que la respuesta contiene 20 productos (la API devuelve solo 20)
         usuario.should(
                 seeThatResponse(response -> response.body("size()", Matchers.is(20)))
         );

@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="As a user, I want to retrieve all existing products" skipped="0" tests="1" time="0.05" timestamp="2024-11-12 06:11:15"><testcase name="Get all products"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="As a user, I want to retrieve all existing products" skipped="0" tests="1" time="0.66" timestamp="2024-11-13 01:39:42"><testcase name="Get all products"/></testsuite>
